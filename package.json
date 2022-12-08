@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i ./resources/tw.css -o ./css/bundle/app.css --watch"
+    "watch": "tailwindcss -i ./resources/tw.css -o ./css/bundle/app.css --watch",
+    "build": "tailwindcss -i ./resources/tw.css -o ./css/bundle/app.css"
   },
   "keywords": [],
   "author": "",
