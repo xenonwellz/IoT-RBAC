@@ -94,6 +94,24 @@ async function updateDevice(e) {
         .catch(error => toastr.error(error.message));
 }
 
+async function transferDevice(e) {
+    e.preventDefault();
+    dname = $("#new_owner").val().trim();
+    did = $("#device_id").val();
+
+    await instance.transferDevice(did, dname, { from: account })
+        .then(async () => {
+            toastr.success("Device successfully transferred");
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
+        })
+        .catch((err) => {
+            toastr.error("Could not transfer this device.");
+            console.log(err);
+        });
+}
+
 async function refreshDevices() {
     let deviceIds = (await instance.getDevicesByOwner(account)).map(el => el.toNumber());
 
