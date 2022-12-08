@@ -23,7 +23,7 @@ You will be taken to a page with a list of 10 eth accounts. Copy your network id
 
 Install the metamask extension for your browser and follow the following tutorial [https://dapp-world.com/blogs/01/how-to-connect-ganache-with-metamask-and-deploy-smart-contracts-on-remix-without-1619847868947](https://dapp-world.com/blogs/01/how-to-connect-ganache-with-metamask-and-deploy-smart-contracts-on-remix-without-1619847868947), to add ganache to metamask.
 
-Now run the command ` npm install`` then  `truffle migrate –reset`. And navigate to the url of your project. You can run `npm run watch``` to use tailwindcss.
+Now run the command ` npm install` then `truffle migrate –reset`. And navigate to the url of your project. You can run `npm run watch` to use tailwindcss.
 
 **FUNCTIONALITY**
 
@@ -51,7 +51,7 @@ Once a device is created the function is set to 0. That is the device is set to 
 
 This page allows you to edit device name, minimum function and maximum function count. It
 
-also allows you to toggle between functions and transfer ownership of the device.
+also allows you to toggle between functions and transfer ownership of the device.`
 
 ![](https://github.com/xenonwellz/IoT-RBAC/raw/master/images/4.png)
 
