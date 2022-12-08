@@ -31,7 +31,7 @@ Now run the command ` npm install`` then  `truffle migrate –reset`. And naviga
 
 The "Manage My Devices" / home page lists all the devices that are owned by the connected account. You can click on any of the devices to manage the device (toggle between functions and edit device name or function count).
 
-![](RackMultipart20221208-1-6pmtkn_html_89b32e770c9e37fe.png)
+![](https://github.com/xenonwellz/IoT-RBAC/raw/master/images/4.png)
 
 Clicking any of the device takes you to a manage device page which will be discussed later.
 
@@ -45,7 +45,7 @@ The register device page allows you to register new device. It takes the followi
 
 Once a device is created the function is set to 0. That is the device is set to off after registration.
 
-![](RackMultipart20221208-1-6pmtkn_html_918892e1d5f9e741.png)
+![](https://github.com/xenonwellz/IoT-RBAC/raw/master/images/2.png)
 
 1. **Manage Device:**
 
@@ -53,7 +53,7 @@ This page allows you to edit device name, minimum function and maximum function 
 
 also allows you to toggle between functions and transfer ownership of the device.
 
-![](RackMultipart20221208-1-6pmtkn_html_ac0b27769e93ca4c.png)
+![](https://github.com/xenonwellz/IoT-RBAC/raw/master/images/4.png)
 
 1. **Simulate device:**
 
@@ -65,4 +65,4 @@ recommended to follow this pattern when registering your devices. Every device c
 
 after this will be considered an unconfigured device.
 
-![](RackMultipart20221208-1-6pmtkn_html_18a92cca43c8df26.png)
+![](https://github.com/xenonwellz/IoT-RBAC/raw/master/images/3.png)
