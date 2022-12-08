@@ -99,6 +99,16 @@ async function transferDevice(e) {
     dname = $("#new_owner").val().trim();
     did = $("#device_id").val();
 
+    if (dname == "") {
+        toastr.error("Name cannot be empty or only whitespace");
+        return false;
+    }
+
+    if (dname == account) {
+        toastr.error("Nothing was changed.");
+        return false;
+    }
+
     await instance.transferDevice(did, dname, { from: account })
         .then(async () => {
             toastr.success("Device successfully transferred");
@@ -307,6 +317,7 @@ async function manage(did) {
         $("#e_device_name").val(result.identifier);
         $("#e_min_toggle").val(result.minToggleMode);
         $("#e_max_toggle").val(result.maxToggleMode);
+        $("#new_owner").val(account);
 
         option = $("#underline_select").html('<option value="0">FUNCTION 0 - [OFF]</option>');
         if (result.currentFunction.words[0] == 0) {
