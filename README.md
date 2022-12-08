@@ -1,4 +1,4 @@
-## **ROLE BASED ACCESS CONTROL WITH IOTA**
+## **DECENTRALIZED ACCESS CONTROL WITH IOTA**
 
 **INSTALLATION GUIDE**
 
@@ -11,7 +11,11 @@ Requirements
 - Truffle (globally installed from npm)
   Tip: install it by running the command `npm i -g truffle`
 
-Move your application to a directory that can be used with your Apache server (C:\xampp\htdocs for windows. And update the $base variable in /views/components/header.php and /routes.php to /your_folder_name/, /var/www for linux. A config file should also be created on linux to serve the application folder).
+Move your application to a directory that can be used with your Apache server
+
+For windows move your application to C:\xampp\htdocs for windows. And update the `$base` variable in `/views/components/header.php` to `/your_folder_name` and `/routes.php` to `/your_folder_name/` notice the forward slashes in both.,
+
+For linux move to `/var/www` . A config file should be created on in `/etc/apache2/sites-available` to serve the application folder. Dont forget to enable the config.
 
 Start Ganache and create a new workspace.
 
@@ -23,7 +27,9 @@ You will be taken to a page with a list of 10 eth accounts. Copy your network id
 
 Install the metamask extension for your browser and follow the following tutorial [https://dapp-world.com/blogs/01/how-to-connect-ganache-with-metamask-and-deploy-smart-contracts-on-remix-without-1619847868947](https://dapp-world.com/blogs/01/how-to-connect-ganache-with-metamask-and-deploy-smart-contracts-on-remix-without-1619847868947), to add ganache to metamask.
 
-Now run the command ` npm install` then `truffle migrate –reset`. And navigate to the url of your project. You can run `npm run watch` to use tailwindcss.
+Now run the command ` npm install` then `truffle migrate –reset`. And navigate to the url of your project. You can run `npm run watch
+
+` to use tailwindcss.
 
 **FUNCTIONALITY**
 
